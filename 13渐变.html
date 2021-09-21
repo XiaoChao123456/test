@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        div {
+            width: 1000px;
+            height: 200px;
+        }
+
+        /* 从上到下的线性渐变： */
+        #grad0 {
+            background-image: linear-gradient(#e66465, #9198e5);
+        }
+
+        /* 从左到右的线性渐变： */
+        #grad1 {
+            height: 200px;
+            background-image: linear-gradient(to right, red, yellow);
+        }
+
+        /* 从左上角到右下角的线性渐变： */
+        #grad2 {
+            height: 200px;
+            background-image: linear-gradient(to bottom right, red, yellow);
+        }
+
+        /* 带有指定的角度的线性渐变： */
+        #grad3 {
+            background-image: linear-gradient(-90deg, red, yellow);
+        }
+    </style>
+    <div id="grad0"></div>
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    <!-- 
+        background-image
+        1.线性渐变（linear-gradient）- 向下/向上/向左/向右/对角方向
+            background-image: linear-gradient(#e66465, #9198e5);
+
+        2.径向渐变（radial-gradient）- 由它们的中心定义
+            background-image: radial-gradient(circle, red, yellow, green);
+            不同尺寸大小关键字的使用
+            size 参数定义了渐变的大小。它可以是以下四个值：
+            closest-side
+            farthest-side
+            closest-corner
+            farthest-corner
+            background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+             background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+     -->
+</body>
+
+</html>
